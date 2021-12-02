@@ -206,7 +206,7 @@ public class AzureBackendClient extends AbstractBackendListenerClient {
         }
 
         if (logResponseData) {
-            properties.put("ResponseData", sr.getResponseDataAsString());
+            properties.put("ResponseData", sr.getSamplerData());
         }
 
         MapUtil.copy(properties, req.getProperties());
